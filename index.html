@@ -1,0 +1,695 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black p-4 shadow-lg">
+    <div class="flex items-center justify-between flex-wrap">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <a href="https://www.qsstechnosoft.com/" class="flex items-center">
+          <img class="w-32" src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/logo-white.svg" alt="QSS Technosoft Logo">
+        </a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-300 hover:border-gray-300">
+          <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Navigation Links -->
+      <div class="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm flex flex-row mx-16 lg:flex-grow text-sembold">
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8 ml-32">Services</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8">Technologies</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8">Industries</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8">Portfolio</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8">Blog</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8">Carrer</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px] mr-8">About</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-rose-600 text-[16px]">Contact</a>
+        </div>
+  
+        <!-- Generative AI Button -->
+        <div class="btn-nav ml-4">
+          <a href="#" class="btn-nav-ai">
+            <span>GENERATIVE AI</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+<!--
+  Hero section 👋
+ 
+-->
+<!-- <section
+  class="relative bg-[url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')] bg-cover bg-center bg-no-repeat h-screen flex items-center"
+> -->
+<section class="relative h-screen bg-cover bg-center bg-no-repeat h-screen flex items-center">
+    <!-- Video background -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
+      <source src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/video_banner.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div
+    class="absolute  mx-4 max-w-screen-xl px-6 lg:px-8 text-center lg:text-left z-10 text-white"
+  >
+    <h1 class="text-[35px] font-semibold">
+      Innovating Your Business with Next-Gen <br />
+      <span class="auto-type text-red-500">Blockchain Solutions</span>
+    </h1>
+
+    <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+      <a
+        href="#"
+        class="inline-block rounded bg-red-600 px-8 py-3 text-sm font-medium hover:bg-white hover:text-rose-600 transition"
+      >
+        Book a Consultation
+      </a>
+      <a
+        href="#"
+        class="inline-block rounded bg-white px-8 py-3 text-sm font-medium text-red-600 hover:bg-gray-200 transition"
+      >
+        View Portfolio
+      </a>
+    </div>
+
+    <div class="mt-8 flex items-center gap-4">
+      <!-- Rating Section -->
+      <div class="flex items-center bg-white p-2 rounded-lg cursor-pointer ">
+        <img
+          src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/qss-reviews-icon.png"
+          alt="Rating"
+          class="h-8 mx-8"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- flip card section -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card ml-12 mx-4 my-8">
+      <div class="card-inner">
+        <!-- Front Side -->
+        <div class="card-front flex flex-col items-center justify-center">
+          <h2 class="font-semibold">$100M+</h2>
+          <p  class="font-semibold"></p>INVESTMENT!</p>
+          <small>Raised By Start-ups.</small>
+        </div>
+        <!-- Back Side -->
+        <div class="card-back">
+          <p>Empowered with experience and skillful workforce, diverse technology exposure.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card my-8">
+        <div class="card-inner">
+          <!-- Front Side -->
+          <div class="card-front flex flex-col items-center justify-center">
+            <h2 class="font-semibold">400+</h2>
+            <p  class="font-semibold"></p>PROJECTS!</p>
+            <small>That Sucessfully Delivered</small>
+          </div>
+          <!-- Back Side -->
+          <div class="card-back">
+            <p>Feel honoured delivering web and mobile applications to our customers</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Card 3 -->
+    <div class="card my-8 mx-4">
+        <div class="card-inner">
+          <!-- Front Side -->
+          <div class="card-front flex flex-col items-center justify-center">
+            <h2 class="font-semibold">250+</h2>
+            <p  class="font-bold"></p>Associates!</p>
+            <small>The Real Backbone</small>
+          </div>
+          <!-- Back Side -->
+          <div class="card-back">
+            <p>Empowered with experience and skillful workforce, diverse technology exposure.</p></p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Card 4 -->
+    <div class="card mr-12 my-8">
+        <div class="card-inner">
+          <!-- Front Side -->
+          <div class="card-front flex flex-col items-center justify-center">
+            <h2 class="font-semibold">13+</h2>
+            <p  class="font-semibold"></p>YEARS!</p>
+            <small>The Splendid Journey</small>
+          </div>
+          <!-- Back Side -->
+          <div class="card-back">
+            <p>We are proud to be an established software development services company<p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- 4th section -->
+
+    <div class="relative bg-cover bg-center h-[400px]" style="background-image: url('https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/become-partner-img.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  </div>
+
+  
+  <div class="relative w-[1000px] h-[600px] m-[150px] mb-16 -mt-[200px] bg-white shadow-lg p-10 rounded-lg flex justify-center items-center space-x-10">
+    <!-- Left Section -->
+    <div class="flex-shrink-0 text-center w-1/3">
+      <div class="text-red-600 text-5xl font-bold">30+</div>
+      <div class="text-gray-600 text-lg font-medium mt-2">Years Experience<br>Working</div>
+  </div>
+
+
+
+    <!-- Right Section -->
+    <div class="flex-1 w-2/3">
+      <h1 class="text-3xl font-bold text-gray-800">
+        Cutting-edge <span class="text-red-600">Tech Solution</span> Pioneers
+      </h1>
+      <p class="mt-4 text-gray-600 text-lg">
+        Innovating with a digital mindset
+      </p>
+      <p class="mt-2 text-gray-500">
+        QSS Technosoft, a leading provider of software development services, represents a team of 250+ skillful associates, who rely on building scalable and smart solutions satisfying the client’s quest for an exceptional product. Being specialized in every vertical of industries, our world-class software solutions range from developing highly intriguing web & mobile apps to integrating technologies like Blockchain, Chatbot, AI, Data Analytics, cloud-based services, and more.
+      </p>
+      <button class="mt-6 px-6 py-3 bg-white-600 text-rose-600 font-medium text-sm rounded-lg  border-2 border-solid border-gray-300 rounded hover:bg-rose-700 hover:text-white">
+        Become a partner
+      </button>
+    </div>
+  </div>
+
+  
+ <!-- 5th section -->
+
+ <div  class="bg-[#020128] text-white">
+  <div class="container mx-auto px-6 py-12">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold">Our Services</h1>
+      <p class="mt-4 text-lg">The product life cycle at QSS is a blend of our technical expertise and best practices across industries to develop products attaining larger market shares and fetching greater ROI for our customers.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Text Content -->
+      <div class="ml-4">
+        <h2 class="text-3xl font-bold mb-4">UI/UX Design</h2>
+        <p class="mb-4">Build smart and intuitive UI/UX Design for an amazing and meaningful end-user experience.</p>
+        <p class="mt-4">A responsive user interface design plays a decisive role during the design and development of web or mobile applications. When a user visits your web page or application, your UI/UX design is the first thing that will create an impression.</p>
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/service-ui-design-img.jpg" alt="UI/UX Design Illustration" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>
+
+  
+
+ <!-- section 6 -->
+
+ <div class="bg-gray-100 text-gray-800"">
+   <!-- Container -->
+  <div class="container mx-auto px-6 py-12">
+
+    <!-- Content Section -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+
+      <!-- Image Section -->
+      <div class="relative">
+        <div class="absolute top-6 left-6 w-full h-full bg-black opacity-20 rounded-xl"></div>
+        <img src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/Indoor-Positioning.jpg" alt="Incident Management" class="rounded-lg shadow-lg relative">
+      </div>
+
+      <!-- Text Content -->
+      <div class="ml-12">
+        <h2 class="text-3xl font-bold mb-4">Incident Management</h2>
+        <h3 class="text-xl font-semibold mb-4 text-gray-600">Xamarin Cross Platform Mobile App</h3>
+        <p class="mb-4 text-gray-700">
+          Cross-platform mobility solutions to record and notify health facilities about incidents in alarming situations for a US-based customer. After identifying the challenges, we surmounted the problems by creating a cross-platform (hybrid) mobile app solution that is accessible on the iOS and Android platforms as well.
+        </p>
+        <p class="text-gray-700">
+          Major features of the application are - Dashboard, Automated workflows, Smart notifications, Reporting...
+        </p>
+        <button class="mt-6 px-6 py-3 bg-white-600 text-rose-600 font-medium text-sm rounded-lg  border-2 border-solid border-gray-300 rounded hover:bg-rose-700 hover:text-white">
+            View All
+          </button>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
+  <!-- section 7 -->
+   <div class="bg-gray-900 text-white">
+     <section class="awards-section text-center py-12">
+        <h2 class="text-4xl font-bold mb-8">Accredited with Awards and Achievements</h2>
+        
+        <div class="awards-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-12">
+            <!-- Award 1 -->
+            <div class="award-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/topsoftwaredevelopmentcompany.png" alt="Top Firms" class="mx-auto mb-4 h-24">
+                <h3 class="text-xl font-semibold mb-2">TopFirms | 2020</h3>
+                <p class="text-gray-400">Ranked as one of the Top Mobile App Development Companies in 2020.</p>
+            </div>
+            <!-- Award 2 -->
+            <div class="award-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/softwareworld.png" alt="Techreviewer" class="mx-auto mb-4 h-24">
+                <h3 class="text-xl font-semibold mb-2">Techreviewer | 2024</h3>
+                <p class="text-gray-400">Ranked among the top cross platform app developers in 2024.</p>
+            </div>
+            <!-- Award 3 -->
+            <div class="award-card bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/iso-award2.png" alt="App Development Companies" class="mx-auto mb-4 h-24">
+                <h3 class="text-xl font-semibold mb-2">App Development Companies | 2020</h3>
+                <p class="text-gray-400">Ranked among the top mobile app developers in Minnesota.</p>
+            </div>
+        </div>
+    </section>
+   </div>
+
+
+   <!-- Brands Section -->
+   <div class="text-center py-12 bg-white">
+    <h2 class="text-4xl font-bold text-red-600">80+ Brands Love To Work With Us</h2>
+    <p class="mt-4 text-gray-600 w-xl mx-16">
+      We are humbly thankful to our customers for showing trust and granting us the opportunities to work for their visionary products, which boost us with confidence to deliver quality solutions for them with courage.
+    </p>
+    <div class="mt-8 grid grid-cols-5 grid-rows-3 gap-8 items-center m-12">
+        <!-- 1st row -->
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/plaoalto.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/zscaler.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/nevada.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto flex flex-col justify-center items-center h-24">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/Sports-Clips.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto w-[80%] flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/cnhi.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto flex flex-col justify-center items-center">
+      </div>
+
+      <!-- 2nd Row -->
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/motherdairy.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-24 flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/HAL.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-24 w-32 flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/Eldermark_Software.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-16 w-48 flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/Matrix.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-16 w-48 flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/shiftpixy.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-16 w-48 flex flex-col justify-center items-center">
+      </div>
+
+      <!-- 3rd Row -->
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://qsstechnosoft.com/wp-content/uploads/2024/01/Abzooba-blk-1.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-16 w-48 flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/cropped-logo.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto flex flex-col justify-center items-center h-24">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/TSI.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/Botplan.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-16 w-48 flex flex-col justify-center items-center">
+      </div>
+      <div class="hover:border-2 border-solid border-gray-300 h-40 w-64 flex flex-col justify-center items-center" >
+        <img src="https://www.qsstechnosoft.com/wp-content/uploads/2024/01/stratum.png"
+         alt="Palo Alto Networks" 
+         class="mx-auto h-16 w-48 flex flex-col justify-center items-center">
+      </div>
+    </div>
+  </div>
+
+ <!-- Client Section -->
+
+ <div class="relative py-12 h-[600px] w-full bg-blue-500" style="background-image: url('./iwan-postel-bg.jpg'); background-attachment: fixed; background-size: cover; background-position: center;">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+    <!-- Image Positioned Above the Content (on the left side) -->
+    <div class="absolute z-40 left-0 top-0 mt-24 ml-12">
+      <img src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/iwan-postel.jpg" alt="Client" class="h-[400px] w-[400px] object-cover">
+    </div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
+      <h2 class="text-3xl font-bold">What Our Clients Say About Us</h2>
+      <div class="mt-8 bg-white rounded-lg shadow-lg overflow-hidden flex items-center relative opacity-50">
+        <div class="p-6 text-left ml-64 relative">
+          <h1 class="text-black text-4xl">Unmatched Speed & Quality Deliverables</h1>
+          <h3 class="text-lg font-semibold">Highly Acknowledge their Responsiveness, Honesty & Delivery Excellence</h3>
+          <p class="mt-2 text-gray-600">
+            The finished platform enabled the company to increase its user base and bring in new resources to complete complex tasks efficiently and easily. The small team handled the project well, maintaining frequent communication and working quickly.
+          </p>
+          <p class="mt-4 font-medium text-gray-900">Matthew Johnson</p>
+          <p class="text-sm text-gray-500">CEO, Contour Innovations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Contact Section -->
+  
+<div class="mt-12 mx-4">
+    <!-- Background Section -->
+    <div class="relative bg-cover bg-center h-[400px]" style="background-image: url('https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/cta-form-bg-img.jpg');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    </div>
+  
+    <!-- Form Section -->
+    <div class="relative w-[1000px] m-auto -mt-[200px] bg-white shadow-lg p-10 rounded-lg mb-24">
+      <h1 class="text-3xl font-bold text-center text-gray-800">
+        Renovate unique Business Processes into Digitally Transformed solutions with <span class="text-red-600">QSS Technosoft!</span>
+      </h1>
+      <p class="mt-4 text-gray-600 text-center">
+        Do you want to remove manual operations, acting as an impediment to your business growth? Realize your ideas on reliable web and mobile software solutions with our professional services. Take the first step to launch your project by filling out this form.
+      </p>
+  
+      <form class="mt-8 space-y-6">
+        <!-- Full Name and Email Address -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="full-name" class="block text-gray-600 font-medium">Full Name*</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Your Name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-600 font-medium">Email Address*</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none">
+          </div>
+        </div>
+  
+        <!-- Phone Number and Attachment -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="phone-number" class="block text-gray-600 font-medium">Phone Number*</label>
+            <div class="flex items-center mt-1">
+              <span class="px-4 py-2 bg-gray-100 border border-gray-300 rounded-l-lg">+91</span>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="81234 56789" class="w-full px-4 py-2 border-t border-b border-r border-gray-300 rounded-r-lg focus:ring-2 focus:ring-red-500 focus:outline-none">
+            </div>
+          </div>
+          <div>
+            <label for="attachment" class="block text-gray-600 font-medium">Attachment</label>
+            <input type="file" id="attachment" name="attachment" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none">
+          </div>
+        </div>
+  
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-gray-600 font-medium">Message*</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." rows="4" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"></textarea>
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="text-center absolute ">
+          <button type="submit" class="mt-4 px-6 py-3 bg-red-600 text-white font-medium text-sm rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">
+            Free Consultation
+          </button>
+        </div>
+      </form>
+  
+      <p class="mt-40 text-center text-gray-500">
+        Looking for jobs? <a href="#" class="text-red-600 hover:underline">Connect with us here</a>
+      </p>
+    </div>
+  </div>
+  
+ 
+  <section>
+    <div class="flex flex-col justify-center items-center h-screen text-white font-poppins">
+      <div class="relative flex flex-col justify-center items-center w-full h-full bg-cover bg-center bg-no-repeat bg-gradient-to-t from-[#53062b] via-[#421936] to-transparent"
+        style="background-image: url('https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg');">
+        
+        <!-- Overlay to darken the background image -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+  
+        <!-- Content Section -->
+        <div class="relative z-10 text-center px-6">
+          <h2 class="text-4xl font-normal mb-6">
+            Our Engagement Model
+          </h2>
+          <p class="text-lg mb-8 mx-auto max-w-3xl text-center">
+            Elevate your software development journey with our customized engagement models,
+            tailored to meet your unique needs and foster a collaborative partnership for success.
+          </p>
+          <div class="text-center">
+            <a href="#" class="inline-block text-white border border-white rounded-md py-3 px-6 text-lg font-bold hover:bg-white hover:text-black transition duration-300">
+              Engagement Models
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  
+  <section class="foot h-screen relative bg-gray-100 m-0">
+    <!-- Background Image -->
+    <div id="background-container" class="foot-img absolute inset-0 w-full h-full ">
+        <img id="background-image" src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-address-bg.jpg" alt="Background Image" class="object-cover w-full h-full">
+    </div>
+
+    <!-- Content -->
+    <div class="foot-content relative z-10 text-left text-black px-4 py-16  max-w-3xl ">
+        <p class="text-xl text-gray-700">We're Here for You</p>
+        <h3 class="text-4xl font-extrabold leading-tight mb-4">
+            Elevate Your Business to New <span class="text-red-600">Heights!</span>
+        </h3>
+        <p class="text-lg font-medium text-gray-600 mb-6">
+            Collaborate with Us Now for Service Excellence
+        </p>
+
+        <!-- Icons -->
+        <div class="flex items-center gap-4 mb-6">
+            <img id="india-icon" src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/india-pin-icon.png" alt="India Pin Icon" class="w-12 h-16 cursor-pointer">
+            <img id="usa-icon" src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-pin-icon.png" alt="USA Pin Icon" class="w-12 h-16 cursor-pointer">
+        </div>
+        <h1 class="text-2xl ">USA</h1>
+        <!-- Address -->
+        <div class="flex flex-row mt-4">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#6C737F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#6C737F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <p class="text-lg font-medium text-gray-800 mb-2 ml-2"> 215 East 78th Street – Suite 200, Bloomington, Minnesota 55420</p>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-2 flex items-center mb-4">
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 3C21 1.9 20.1 1 19 1H3C1.9 1 1 1.9 1 3M21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3M21 3L11 10L1 3" stroke="#6C737F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <a href="mailto:hello@qsstechnosoft.com" class="text-lg font-medium text-gray-800 hover:underline ml-2">
+                hello@qsstechnosoft.com
+            </a>
+        </div>
+        
+        <div class="mb-2 flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                <path d="M15 19V3C15 2.46957 14.7893 1.96086 14.4142 1.58579C14.0391 1.21071 13.5304 1 13 1H9C8.46957 1 7.96086 1.21071 7.58579 1.58579C7.21071 1.96086 7 2.46957 7 3V19M3 5H19C20.1046 5 21 5.89543 21 7V17C21 18.1046 20.1046 19 19 19H3C1.89543 19 1 18.1046 1 17V7C1 5.89543 1.89543 5 3 5Z" stroke="#6C737F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <a href="mailto:career@qsstechnosoft.com" class="text-lg font-medium text-gray-800 hover:underline ml-2">
+                career@qsstechnosoft.com
+            </a>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center">
+            <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.8881 15.9562V18.9562C20.8892 19.2347 20.8322 19.5104 20.7206 19.7656C20.6091 20.0208 20.4454 20.2498 20.2402 20.4381C20.035 20.6264 19.7927 20.7697 19.5289 20.8589C19.265 20.9482 18.9855 20.9813 18.7081 20.9562C15.631 20.6219 12.6751 19.5704 10.0781 17.8862C7.66194 16.3509 5.61345 14.3024 4.07812 11.8862C2.38809 9.27743 1.33636 6.30722 1.00812 3.21623C0.983127 2.9397 1.01599 2.66099 1.10462 2.39785C1.19324 2.13472 1.33569 1.89292 1.52288 1.68785C1.71008 1.48278 1.93792 1.31894 2.19191 1.20675C2.44589 1.09456 2.72046 1.03649 2.99812 1.03623H5.99812C6.48342 1.03145 6.95391 1.20331 7.32188 1.51976C7.68985 1.83622 7.93019 2.27568 7.99812 2.75623C8.12474 3.7163 8.35957 4.65896 8.69812 5.56623C8.83266 5.92415 8.86178 6.31314 8.78202 6.68711C8.70227 7.06108 8.51698 7.40434 8.24812 7.67623L6.97812 8.94623C8.40167 11.4498 10.4746 13.5227 12.9781 14.9462L14.2481 13.6762C14.52 13.4074 14.8633 13.2221 15.2372 13.1423C15.6112 13.0626 16.0002 13.0917 16.3581 13.2262C17.2654 13.5648 18.2081 13.7996 19.1681 13.9262C19.6539 13.9948 20.0975 14.2394 20.4146 14.6137C20.7318 14.988 20.9003 15.4658 20.8881 15.9562Z" stroke="#6C737F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <p class="text-lg font-medium text-gray-800 ml-2">
+                +1 612 201 1169
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="m-foot bg-[#181818] py-16 text-white mt-0">
+  <div class="main-footer flex justify-between gap-8 px-10">
+    <!-- Company Info Section -->
+    <div class="box1 w-[267px]">
+      <div class="flex flex-col gap-8">
+        <img src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/logo-white.png" class="w-[120px] h-[50px]">
+        <p class="text-xs font-medium leading-6">
+          QSS Technosoft is a global provider of high-quality software development services delivering
+          world-class software solutions to SMEs focused on data analytics, big data, process automation,
+          desktop and web solutions, e-commerce solutions, mobile applications & Digital marketing
+          services.
+        </p>
+        <div class="social flex gap-5">
+          <a href="#" class="fa fa-facebook text-2xl hover:bg-[#1877F2] rounded-full p-2"></a>
+          <a href="#" class="fa fa-linkedin text-2xl hover:bg-[#2961a0] rounded-full p-2"></a>
+          <a href="#" class="fa fa-instagram text-2xl hover:bg-[#bc2a8d] rounded-full p-2"></a>
+          <a href="#" class="fa fa-twitter text-2xl hover:bg-[#1DA1F2] rounded-full p-2"></a>
+          <a href="#" class="fa fa-pinterest text-2xl hover:bg-[#bd081c] rounded-full p-2"></a>
+          <a href="#" class="fa fa-youtube text-2xl hover:bg-[#FF0000] rounded-full p-2"></a>
+          <a href="#" class="fa fa-skype text-2xl hover:bg-[#00aff0] rounded-full p-2"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industries Section -->
+    <div class="box2">
+      <h6 class="text-lg font-semibold pb-4">Industries</h6>
+      <ul class="space-y-2 text-sm">
+        <li class="hover:underline cursor-pointer">Healthcare & Fitness</li>
+        <li class="hover:underline cursor-pointer">GIS</li>
+        <li class="hover:underline cursor-pointer">Law Enforcement</li>
+        <li class="hover:underline cursor-pointer">Transportation & Logistics</li>
+        <li class="hover:underline cursor-pointer">Sports</li>
+        <li class="hover:underline cursor-pointer">Biometrics</li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="box3">
+      <h6 class="text-lg font-semibold pb-4">Services</h6>
+      <ul class="space-y-2 text-sm ">
+        <li class="hover:underline cursor-pointer">Web & Mobile Application Development</li>
+        <li class="hover:underline cursor-pointer">eCommerce Development</li>
+        <li class="hover:underline cursor-pointer">UI/UX Design & QA Testing</li>
+        <li class="hover:underline cursor-pointer">AI/Machine Learning</li>
+        <li class="hover:underline cursor-pointer">Cloud Services</li>
+        <li class="hover:underline cursor-pointer">Chatbot & Blockchain Development</li>
+        <li class="hover:underline cursor-pointer">Support & Maintenance</li>
+      </ul>
+    </div>
+
+    <!-- Quick Links Section -->
+    <div class="box4">
+      <h6 class="text-lg font-semibold pb-4">Quick Links</h6>
+      <ul class="space-y-2 text-sm">
+        <li >About Us</li>
+        <li>Portfolio</li>
+        <li>Career</li>
+        <li>Blog</li>
+        <li>Credits</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+      </ul>
+    </div>
+
+    <!-- Technologies Section -->
+    <div class="box5">
+      <h6 class="text-lg font-semibold pb-4">Technologies</h6>
+      <ul class="grid grid-cols-2 gap-2 text-xs inline-block">
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">iOS & Android App</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">React Native</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">Xamarin App</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">ReactJS</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">AngularJS</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">Node.js</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">Java</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">C#/.Net</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">Golang</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">Solidity Blockchain</li>
+        <li class="border-[1px] border-white rounded-md p-2 text-center hover:bg-gray-700 cursor-pointer">Flutter</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+<div class="bg-black h-24 mt-0 text-center text-sm py-4 flex flex-row justify-between items-center ">
+  <img src="https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/ssl-stamp.svg" class="h-8 ml-4" alt="">
+  <p class="text-xs text-white ">2010 - 2024 © QSS Technosoft</p>
+  <p class="text-xs text-white">Full stack mobile and web app design and development company</p>
+</div>
+<script>
+  // Get the icons and background image container
+  const indiaIcon = document.getElementById("india-icon");
+  const usaIcon = document.getElementById("usa-icon");
+  const backgroundImage = document.getElementById("background-image");
+
+  // Set click event for India Icon
+  indiaIcon.addEventListener("click", function() {
+      backgroundImage.src = "https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/india-address-bg.jpg"; 
+  });
+
+  // Set click event for USA Icon
+  usaIcon.addEventListener("click", function() {
+      backgroundImage.src = "https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-address-bg.jpg"; 
+  });
+
+  // Typing Effect 
+  var typed = new Typed(".auto-type", {
+  strings: ["Cloud Services", "Salesforce Integration", "Generative AI"],
+  typeSpeed: 150, 
+  backSpeed: 150, 
+  loop: true
+});
+
+</script>
+
+</body>
+</html>

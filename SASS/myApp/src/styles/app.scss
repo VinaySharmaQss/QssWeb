@@ -1,0 +1,21 @@
+@use "_colors" as colors;
+
+div{
+    button{
+        background-color: colors.$red;
+        padding: 2rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+div{
+    div{
+        @extend button;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
